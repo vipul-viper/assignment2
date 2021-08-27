@@ -30,12 +30,14 @@ public class TestAccount {
 	@Test
 	public void testValidWithdraw() throws AmountException, BalanceException
 	{
-		tc.balance=10000;
+		tc.deposit(10000.0);
+		
 		tc.withdraw(100);
 	}
 	@Test
 	public void testInValidWithdraw() throws AmountException, BalanceException
 	{
+		tc.deposit(10000.0);
 		tc.withdraw(100000);
 	}
 
