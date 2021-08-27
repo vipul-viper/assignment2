@@ -22,7 +22,7 @@ class BalanceException extends Exception
 }
 @Component("acc")
 public class Account {
-	double balance;
+	static double balance;
 	
 
 	public Account() {
